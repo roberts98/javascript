@@ -6,12 +6,14 @@
     </head>
     <body>
         <h1>ToDo list</h1>
+        <input type="text" id="filter-todo" placeholder="Search a todo">
         <div id="todos">
 
         </div>
-        <input type="text" id="new-todo" placeholder="Type a new Todo">
-        <button>Add new ToDo</button>
-
+        <form id="new-todo">
+            <input type="text" name="newTodo" placeholder="type a new todo">
+            <button>Submit!</button>
+        </form>
         <script src="index.js"></script>
     </body>
 </html>
