@@ -31,7 +31,23 @@ const renderTodos = function(todos, filters) {
 
 renderTodos(todos, filter);
 
-document.querySelector('#new-todo').addEventListener('input', function(event) {
+document.querySelector('#filter-todo').addEventListener('input', function(event) {
     filter.searchText = event.target.value;
     renderTodos(todos, filter.searchText);
+})
+
+const addNewTodo = function(todos, todoText) {
+    const newTodo = {
+        text: todoText,
+        isCompleted: false
+    }
+    todos.push(newTodo);
+    renderTodos(todos, filter);
+}
+
+document.querySelector('#new-todo').addEventListener('submit', function(event) {
+    event.preventDefault();
+    const text = event.target.elements.newTodo.value;
+    addNewTodo(todos, text);
+    event.target.elements.newTodo.value = '';
 })
