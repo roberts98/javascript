@@ -1,0 +1,73 @@
+body {
+	margin-left: 0px;
+	margin-right: 0px;
+	background-color: #631a6b;
+	font-size: 25px;
+	font-family: verdana;
+	color: white;
+}
+
+#bigTitle {
+	margin-top: -5px;
+	margin-bottom: -5px;
+	font-size: 1.3em;
+}
+
+h1 {
+	margin-top: -10px;
+	background: pink;
+	text-align: center;
+	color: #504951;
+	padding-bottom: 30px;
+}
+
+.square {
+	background-color: black;
+	width: 30%;
+	padding-bottom: 30%;
+	float: left;
+	margin: 1.66%;
+}
+
+#container {
+	margin: 0 auto;
+	max-width: 300px;
+}
+
+.black {
+	background-color: black;
+}
+
+.red {
+	background: url(krzyzyk.png);
+}
+
+.yellow {
+	background: url(kolko.png);
+}
+
+#navbar {
+	font-size: 20px;
+	font-weight: 600;
+	margin-top: -35px;
+	background-color: white;
+	color: black;
+}
+
+#currentPlayer {
+	text-align: center;
+}
+
+#status {
+	text-align: center;
+}
+
+#newGame {
+	text-align: center;
+	margin: 0 auto;
+	width: 20%;
+}
+
+#score {
+	text-align: center;
+}
